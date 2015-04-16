@@ -10,7 +10,7 @@ Triple-7 Wi-Fi latency test
 	- Traceroute
 
 ### prerequisite:
-- Java 6 JVM (default installes on OSX)
+- Java 6 JVM (default installed on OSX)
 
 Results are being stored in folder test-results/{timestamp}
 
