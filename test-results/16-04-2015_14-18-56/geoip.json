@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Server: nginx/1.6.2
+Date: Thu, 16 Apr 2015 12:18:53 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 342
+Connection: close
+Cache-Control: no-cache
+Access-Control-Allow-Origin: *
+
+getgeoip({"longitude":4.75,"latitude":52.3,"asn":"AS42517","offset":"2","ip":"109.69.228.213","area_code":"0","continent_code":"EU","dma_code":"0","city":"Schiphol","timezone":"Europe\/Amsterdam","region":"Noord-Holland","country_code":"NL","isp":"Schiphol Telematics B.V.","country":"Netherlands","country_code3":"NLD","region_code":"07"});
