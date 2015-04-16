@@ -9,6 +9,9 @@ Triple-7 Wi-Fi latency test
 	- Detection of current geolocation
 	- Traceroute
 
+### prerequisite:
+- Java 6 JVM (default installed on OSX)
+
 Results are being stored in folder test-results/{timestamp}
 
 ### Setting once the execution rights of the script:
