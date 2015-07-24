@@ -20,13 +20,13 @@ mkdir -p $OUT
 echo "=============================================="
 echo "Determine geolocation:"
 echo "=============================================="
-curl -H "Content-Type: application/json" -i "http://www.telize.com/geoip?callback=getgeoip" >  $OUT/geoip.json
+curl -H "Content-Type: application/json" -i "http://ipinfo.io/json" >  $OUT/geoip.json &
 
 # traceroute verbose
 echo "=============================================="
 echo "start traceroute test:"
 echo "=============================================="
-traceroute  -m30 klm.com > $OUT/traceroute.txt
+traceroute  -m30 klm.com > $OUT/traceroute.txt &
 
 # set JVM arguments
 set JVM_ARGS="-Xms1024m -Xmx1024m -Dpropname=propvalue"
@@ -35,7 +35,7 @@ set JVM_ARGS="-Xms1024m -Xmx1024m -Dpropname=propvalue"
 echo "=============================================="
 echo "start jmeter tests:"
 echo "=============================================="
-./bin/jmeter -n -t 777-latency-test.jmx -l $OUT/jmeter.jtl
+./bin/jmeter -n -t 777-latency-test.jmx -l $OUT/jmeter.jtl &
 
 echo "=============================================="
 echo "FINISHED: The latency test"
